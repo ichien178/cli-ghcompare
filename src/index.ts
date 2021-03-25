@@ -20,7 +20,7 @@ class Ghcompare extends Command {
 
     const gitSshUrl = await gitRemoteOriginUrl()
     // eslint-disable-next-line new-cap
-    const gitHttpsUrl = GitUrlParse(gitSshUrl).toString('https')
+    const gitHttpsUrl = GitUrlParse(gitSshUrl).toString('https').replace('.git', '')
 
     this.log(`${argv[0]}`)
     this.log(`${argv[1]}`)
