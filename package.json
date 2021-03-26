@@ -7,7 +7,7 @@
     "ghcompare": "bin/run"
   },
   "bugs": {
-    "url": "https://github.com/1coin178/ghcompare/issues"
+    "url": "https://github.com/1coin178/cli-ghcompare/issues"
   },
   "dependencies": {
     "@oclif/command": "^1",
@@ -40,7 +40,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/1coin178/ghcompare",
+  "homepage": "https://github.com/1coin178/cli-ghcompare",
   "keywords": [
     "oclif"
   ],
@@ -51,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1coin178/ghcompare.git"
+    "url": "git+https://github.com/1coin178/cli-ghcompare"
   },
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
