@@ -1,7 +1,7 @@
 {
   "name": "@1coin178/github-compare",
   "description": "open github compare link.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "1coin178",
   "bin": {
     "ghcompare": "bin/run"
