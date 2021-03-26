@@ -9,7 +9,7 @@ open github compare Url link.
 - [Commands](#commands)
 <!-- tocstop -->
 # Usage
-<!-- usage -->
+usage
 ```sh-session
 $ npm install -g @1coin178/github-compare
 $ ghcompare <compare-CommitIdOrBranchName> <base-CommitIdOrBranchName>
