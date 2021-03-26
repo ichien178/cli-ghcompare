@@ -27,7 +27,7 @@ class Ghcompare extends Command {
     }
 
     // open browser
-    const compareGitHubUrl = `${gitHttpsUrl}/compare/${argv[0]}...${argv[1]}`
+    const compareGitHubUrl = `${gitHttpsUrl}/compare/${argv[1]}...${argv[0]}`
     this.log(`open URL by defaultBrowser: ${compareGitHubUrl}`)
     await open(compareGitHubUrl)
   }
