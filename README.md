@@ -14,7 +14,7 @@ $ npm install -g @1coin178/github-compare
 $ ghcompare COMMAND
 running command...
 $ ghcompare (-v|--version|version)
-@1coin178/github-compare/0.1.3 darwin-x64 node-v14.1.0
+@1coin178/github-compare/0.1.4 darwin-x64 node-v14.1.0
 $ ghcompare --help [COMMAND]
 USAGE
   $ ghcompare COMMAND
