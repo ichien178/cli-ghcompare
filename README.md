@@ -5,22 +5,23 @@ open github compare Url link.
 
 <!-- toc -->
 * [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g ghcompare
+$ npm install -g @1coin178/github-compare
 $ ghcompare COMMAND
 running command...
 $ ghcompare (-v|--version|version)
-ghcompare/0.1.1 darwin-x64 node-v14.1.0
+@1coin178/github-compare/0.1.3 darwin-x64 node-v14.1.0
 $ ghcompare --help [COMMAND]
 USAGE
   $ ghcompare COMMAND
 ...
 ```
 <!-- usagestop -->
-```sh-session
-$ npm install -g ghcompare
-$ ghcompare <start-commitIdOrBranchName> <end-commitIdOrBranchName>
-...
+# Commands
+<!-- commands -->
+
+<!-- commandsstop -->
