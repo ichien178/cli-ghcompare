@@ -1,8 +1,8 @@
 {
   "name": "ghcompare",
-  "description": "open github compare link by commitId",
+  "description": "open github compare link.",
   "version": "0.0.0",
-  "author": "shinji ichien @1coin178",
+  "author": "1coin178",
   "bin": {
     "ghcompare": "./bin/run"
   },
