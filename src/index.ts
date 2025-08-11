@@ -1,7 +1,9 @@
 import {Command, flags} from '@oclif/command'
 
 class Ghcompare extends Command {
-  static description = 'open github compare Url link.';
+  static description = `Opens a GitHub compare URL for the current repository in your default browser.
+
+It takes two arguments: a head commit/branch and a base commit/branch.`;
 
   static flags = {
     // add --version flag to show CLI version
@@ -9,7 +11,13 @@ class Ghcompare extends Command {
     help: flags.help({char: 'h'}),
   };
 
-  static args = [{name: 'startCommitIdOrBranchName'}, {name: 'endCommitIdOrBranchName'}];
+  static args = [{name: 'head'}, {name: 'base'}];
+
+  static examples = [
+    `$ ghcompare main develop`,
+    `$ ghcompare my-feature-branch main`,
+    `$ ghcompare a1b2c3d 9f8e7g6`,
+  ];
 
   async run() {
     const gitRemoteOriginUrl = require('git-remote-origin-url')
@@ -23,7 +31,7 @@ class Ghcompare extends Command {
     const gitHttpsUrl = GitUrlParse(gitSshUrl).toString('https').replace('.git', '')
 
     if (argv.length !== 2) {
-      this.error('please set 2 arguments. For example, ghcompare <first> <second>')
+      this.error('Please provide two arguments: a head and a base. For example: ghcompare my-feature-branch main')
     }
 
     // open browser
