@@ -14,9 +14,9 @@ It takes two arguments: a head commit/branch and a base commit/branch.`;
   static args = [{name: 'head'}, {name: 'base'}];
 
   static examples = [
-    `$ ghcompare main develop`,
-    `$ ghcompare my-feature-branch main`,
-    `$ ghcompare a1b2c3d 9f8e7g6`,
+    '$ ghcompare main develop',
+    '$ ghcompare my-feature-branch main',
+    '$ ghcompare a1b2c3d 9f8e7g6',
   ];
 
   async run() {
