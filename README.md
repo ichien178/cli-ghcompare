@@ -1,22 +1,35 @@
-ghcompare
-=========
+# ghcompare
 
-open github compare Url link.
+A simple CLI tool that opens a GitHub compare URL for the current repository in your default browser.
 
-<!-- toc -->
-- [ghcompare](#ghcompare)
-- [Usage](#usage)
-- [Commands](#commands)
-<!-- tocstop -->
-# Usage
-usage
-```sh-session
-$ npm install -g @1coin178/github-compare
-$ ghcompare <compare-CommitIdOrBranchName> <base-CommitIdOrBranchName>
+## Installation
 
+```sh
+npm install -g @1coin178/github-compare
 ```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
 
-<!-- commandsstop -->
+## Usage
+
+The command takes two arguments: the `HEAD` and `BASE` of the comparison. These can be branch names or commit SHAs.
+
+```sh
+ghcompare <head> <base>
+```
+
+The tool will open a URL like `https://github.com/user/repo/compare/base...head` in your browser.
+
+### Examples
+
+- Compare a feature branch to `main`:
+  ```sh
+  ghcompare my-feature-branch main
+  ```
+
+- Compare two commits:
+  ```sh
+  ghcompare a1b2c3d 9f8e7g6
+  ```
+
+## How it works
+
+The tool automatically detects the GitHub repository URL from your local git repository's `origin` remote.
