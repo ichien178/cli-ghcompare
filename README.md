@@ -30,6 +30,10 @@ The tool will open a URL like `https://github.com/user/repo/compare/base...head`
   ghcompare a1b2c3d 9f8e7g6
   ```
 
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details on how to set up your development environment.
+
 ## How it works
 
 The tool automatically detects the GitHub repository URL from your local git repository's `origin` remote.
